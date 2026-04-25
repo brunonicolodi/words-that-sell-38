@@ -1,7 +1,6 @@
 import Nav from "@/components/landing/Nav";
 import Hero from "@/components/landing/Hero";
 import Manifesto from "@/components/landing/Manifesto";
-import Problem from "@/components/landing/Problem";
 import Services from "@/components/landing/Services";
 import Mentorias from "@/components/landing/Mentorias";
 import NotForYou from "@/components/landing/NotForYou";
@@ -17,7 +16,6 @@ const Index = () => {
       <Nav />
       <Hero />
       <Manifesto />
-      <Problem />
       <section id="servicos">
         <Services />
       </section>

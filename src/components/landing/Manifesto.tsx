@@ -14,17 +14,14 @@ const Manifesto = () => {
                 <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F57] border border-foreground/20" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#FEBC2E] border border-foreground/20" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#28C840] border border-foreground/20" />
-                <span className="ml-3">manifesto.docx</span>
+                <span className="ml-3">copywriting.docx</span>
               </span>
               <span className="hidden md:inline">Página 1 de 1 · 312 palavras</span>
             </div>
 
             {/* Document header */}
             <header className="mb-8 border-b border-dashed border-foreground/30 pb-6">
-              <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-                Rascunho · sem título
-              </p>
-              <h2 className="mt-3 text-3xl leading-tight text-foreground md:text-4xl">
+              <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
                 Por que o seu Instagram não está vendendo
               </h2>
             </header>
