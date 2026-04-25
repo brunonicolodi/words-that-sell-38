@@ -1,16 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Nav from "@/components/landing/Nav";
+import Hero from "@/components/landing/Hero";
+import Problem from "@/components/landing/Problem";
+import Services from "@/components/landing/Services";
+import Mentorias from "@/components/landing/Mentorias";
+import NotForYou from "@/components/landing/NotForYou";
+import Examples from "@/components/landing/Examples";
+import ForWhom from "@/components/landing/ForWhom";
+import Process from "@/components/landing/Process";
+import Contact from "@/components/landing/Contact";
+import Footer from "@/components/landing/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen bg-background">
+      <Nav />
+      <Hero />
+      <Problem />
+      <section id="servicos">
+        <Services />
+      </section>
+      <section id="mentorias">
+        <Mentorias />
+      </section>
+      <NotForYou />
+      <Examples />
+      <section id="para-quem">
+        <ForWhom />
+      </section>
+      <section id="processo">
+        <Process />
+      </section>
+      <Contact />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
