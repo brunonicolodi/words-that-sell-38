@@ -1,5 +1,4 @@
-# Build the Vite app and deploy to GitHub Pages
-name: Deploy site to Pages
+name: Deploy Vite site to Pages
 
 on:
   push:
@@ -36,6 +35,9 @@ jobs:
 
       - name: SPA fallback (copy index.html to 404.html)
         run: cp dist/index.html dist/404.html
+
+      - name: Disable Jekyll processing
+        run: touch dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
