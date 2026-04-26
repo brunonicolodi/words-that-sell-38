@@ -58,6 +58,10 @@ const Contact = () => {
                 <Input id="email" name="email" type="email" required placeholder="voce@email.com" className="mt-2" />
               </div>
               <div>
+                <Label htmlFor="whatsapp">WhatsApp</Label>
+                <Input id="whatsapp" name="whatsapp" type="tel" required placeholder="(00) 00000-0000" className="mt-2" />
+              </div>
+              <div>
                 <Label htmlFor="business">Seu negócio</Label>
                 <Input id="business" name="business" placeholder="O que você vende?" className="mt-2" />
               </div>
