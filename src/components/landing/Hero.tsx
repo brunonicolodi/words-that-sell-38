@@ -47,7 +47,11 @@ const Hero = () => {
             <span className="h-1 w-1 rounded-full bg-border" />
             <span>Erechim · Brasil</span>
             <span className="h-1 w-1 rounded-full bg-border" />
-            <span>Publicitário · Copywriter</span>
+            <span className="inline-flex items-center gap-2">
+              Publicitário
+              <span className="h-1 w-1 rounded-full bg-border" />
+              Copywriter
+            </span>
           </div>
         </div>
       </div>
