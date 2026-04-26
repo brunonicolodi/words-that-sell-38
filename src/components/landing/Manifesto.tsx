@@ -22,7 +22,7 @@ const Manifesto = () => {
             {/* Document header */}
             <header className="mb-8 border-b border-dashed border-foreground/30 pb-6">
               <h2 className="text-3xl leading-tight text-foreground md:text-4xl">
-                Por que o seu Instagram não está vendendo
+                Por que o seu Instagram não está vendendo?
               </h2>
             </header>
 
