@@ -16,7 +16,6 @@ const Nav = () => {
           <a href="#servicos" className="hover:text-brand-deep">Serviços</a>
           <a href="#mentorias" className="hover:text-brand-deep">Mentorias</a>
           <a href="#processo" className="hover:text-brand-deep">Processo</a>
-          <a href="#faq" className="hover:text-brand-deep">FAQ</a>
         </nav>
         <Button asChild variant="cta" size="sm">
           <a href="#contato">Bora falar →</a>
