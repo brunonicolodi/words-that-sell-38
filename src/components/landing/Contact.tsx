@@ -9,17 +9,44 @@ import { Send } from "lucide-react";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      toast({
-        title: "Mensagem enviada",
-        description: "Em breve entrarei em contato. Obrigado!",
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    formData.append("access_key", "b1a3650e-fc94-44d1-bd04-3bd18d47122d");
+    formData.append("subject", "Novo contato - Palavras que Vendem");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
       });
-      (e.target as HTMLFormElement).reset();
-    }, 800);
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Mensagem enviada",
+          description: "Em breve entrarei em contato. Obrigado!",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "Erro ao enviar",
+          description: data.message || "Tente novamente em instantes.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar",
+        description: "Verifique sua conexão e tente novamente.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
