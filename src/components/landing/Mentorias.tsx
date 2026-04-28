@@ -4,18 +4,12 @@ import CTAButton from "./CTAButton";
 const mentorias = [
   {
     n: "01",
-    title: "Escrita para Vendas e Conversão",
-    desc: "Instagram, E-commerce, E-mail, WhatsApp e mais. Onde sua audiência decide comprar — você precisa estar pronto.",
-    meta: "3 encontros · virtuais ou ao vivo",
-  },
-  {
-    n: "02",
     title: "Mentoria Básica em Copywriting",
     desc: "O essencial que você precisa saber para se comunicar na internet com clareza e propósito de venda.",
     meta: "3 encontros · virtuais ou ao vivo",
   },
   {
-    n: "03",
+    n: "02",
     title: "IA aplicada ao seu trabalho",
     desc: "Use Inteligência Artificial para escrever melhor, mais rápido e com estratégia. 100% prática.",
     meta: "1 encontro · virtual ou ao vivo",
