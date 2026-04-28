@@ -15,29 +15,22 @@ const Contact = () => {
 
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
-    formData.append("access_key", "b1a3650e-fc94-44d1-bd04-3bd18d47122d");
-    formData.append("subject", "Novo contato - Palavras que Vendem");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await response.json();
+      await fetch(
+        "https://script.google.com/macros/s/AKfycby27GKwUCAIm1l6noDZKMnI6yVENVoBjl4gD6uoYwxvgouIHpZ0GsTLiQ7-EkbhVR4/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          body: formData,
+        }
+      );
 
-      if (data.success) {
-        toast({
-          title: "Mensagem enviada",
-          description: "Em breve entrarei em contato. Obrigado!",
-        });
-        form.reset();
-      } else {
-        toast({
-          title: "Erro ao enviar",
-          description: data.message || "Tente novamente em instantes.",
-          variant: "destructive",
-        });
-      }
+      toast({
+        title: "Mensagem enviada",
+        description: "Em breve entrarei em contato. Obrigado!",
+      });
+      form.reset();
     } catch (error) {
       toast({
         title: "Erro ao enviar",
