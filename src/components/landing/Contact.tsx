@@ -70,8 +70,8 @@ const Contact = () => {
           >
             <div className="space-y-5">
               <div>
-                <Label htmlFor="name">Nome</Label>
-                <Input id="name" name="name" required placeholder="Seu nome completo" className="mt-2" />
+                <Label htmlFor="nome">Nome</Label>
+                <Input id="nome" name="nome" required placeholder="Seu nome completo" className="mt-2" />
               </div>
               <div>
                 <Label htmlFor="email">E-mail</Label>
@@ -82,14 +82,14 @@ const Contact = () => {
                 <Input id="whatsapp" name="whatsapp" type="tel" required placeholder="(00) 00000-0000" className="mt-2" />
               </div>
               <div>
-                <Label htmlFor="business">Seu negócio</Label>
-                <Input id="business" name="business" placeholder="O que você vende?" className="mt-2" />
+                <Label htmlFor="negocio">Seu negócio</Label>
+                <Input id="negocio" name="negocio" placeholder="O que você vende?" className="mt-2" />
               </div>
               <div>
-                <Label htmlFor="message">Como posso te ajudar?</Label>
+                <Label htmlFor="ajuda">Como posso te ajudar?</Label>
                 <Textarea
-                  id="message"
-                  name="message"
+                  id="ajuda"
+                  name="ajuda"
                   rows={4}
                   required
                   placeholder="Conte um pouco sobre o seu desafio..."
