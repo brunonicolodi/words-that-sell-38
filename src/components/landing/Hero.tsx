@@ -1,4 +1,6 @@
 import heroImage from "@/assets/hero-waves.jpg";
+import logoFull from "@/assets/logo-full.png";
+import logoMark from "@/assets/logo-mark.png";
 import CTAButton from "./CTAButton";
 
 const Hero = () => {
@@ -18,6 +20,23 @@ const Hero = () => {
 
       <div className="container relative mx-auto px-6 pt-24 pb-32 md:pt-32 md:pb-40">
         <div className="mx-auto max-w-4xl text-center">
+          <div className="mb-8 flex items-center justify-center gap-4">
+            <div className="rounded-2xl bg-foreground px-6 py-3 shadow-card">
+              <img
+                src={logoFull}
+                alt="Bruno Nicolodi"
+                className="h-10 w-auto md:h-12"
+              />
+            </div>
+            <div className="rounded-2xl bg-foreground p-2 shadow-card">
+              <img
+                src={logoMark}
+                alt="BN"
+                className="h-14 w-14 object-contain md:h-16 md:w-16"
+              />
+            </div>
+          </div>
+
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-background/70 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-primary backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-primary-glow" />
             Copywriting estratégico
