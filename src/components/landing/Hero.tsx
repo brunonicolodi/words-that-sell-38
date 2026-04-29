@@ -19,11 +19,11 @@ const Hero = () => {
 
       <div className="container relative mx-auto px-6 pt-24 pb-32 md:pt-32 md:pb-40">
         <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-8 flex items-center justify-center">
+          <div className="mb-10 flex items-center justify-center">
             <img
               src={logoFull}
               alt="Bruno Nicolodi"
-              className="h-12 w-auto md:h-16"
+              className="h-10 w-auto md:h-14"
             />
           </div>
 
