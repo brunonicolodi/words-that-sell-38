@@ -9,7 +9,7 @@ const Nav = () => {
           <img
             src={logoFull}
             alt="Bruno Nicolodi"
-            className="h-7 w-auto md:h-8"
+            className="h-9 w-auto rounded-lg md:h-10"
             loading="eager"
             decoding="async"
           />

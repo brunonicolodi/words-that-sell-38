@@ -23,7 +23,7 @@ const Hero = () => {
             <img
               src={logoFull}
               alt="Bruno Nicolodi"
-              className="h-10 w-auto opacity-90 md:h-14"
+              className="h-12 w-auto rounded-xl shadow-card md:h-16"
               loading="eager"
               decoding="async"
             />
