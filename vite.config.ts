@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
- base: '/words-that-sell-38/',
+  // GitHub Pages precisa do subcaminho; Lovable (preview/publicado) serve na raiz.
+  base: process.env.GITHUB_ACTIONS ? "/words-that-sell-38/" : "/",
   server: {
     host: "::",
     port: 8080,
